@@ -1,0 +1,8 @@
+<h1> Updated Picture in the table</h1>
+
+<p> <% @p = Picture.find(params[:id]) %></p>
+<p> <% @p.caption = params[:caption] %></p>
+<p> <% @p.source = params[:source] %></p>
+<p> <% @p.save %></p>
+<p> <%=params[:caption] %> picture has been edited</p>
+<a href="http://localhost:3000/all_pictures">Back to all pictures</a>

@@ -1,0 +1,6 @@
+<h1> Picture Deletion </h1>
+<p> <% @p = Picture.find(params[:id]) %></p>
+<p> <% @p.delete %></p>
+<p> <% @p.save %></p>
+<p> picture <%=params[:id] %> has been deleted</p>
+<a href="http://localhost:3000/all_pictures">Back to all pictures</a>

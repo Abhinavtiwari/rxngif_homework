@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 <head>
   <title>Rxngif</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -7,7 +8,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<h2>
+<%= notice %>
+</h2>
 <%= yield %>
 
 </body>

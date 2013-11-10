@@ -17,17 +17,17 @@ Rxngif::Application.routes.draw do
   #------------------------------
 
   #CREATE
-  get "/pictures/new", :controller => "pictures", :action => "new", :as => "new_picture"
-  post "/pictures", :controller => "pictures", :action => "create", :as => "pictures" 
+  get "/posts/new", :controller => "posts", :action => "new", :as => "new_post"
+  post "/posts", :controller => "posts", :action => "create", :as => "posts" 
   
   #READ
-  get "/pictures", :controller => "pictures", :action => "index"
-  get "/pictures/:id", :controller => "pictures", :action => "show", :as => "picture" 
+  get "/posts", :controller => "posts", :action => "index"
+  get "/posts/:id", :controller => "posts", :action => "show", :as => "post" 
   
   #UPDATE
-  get "/pictures/:id/edit", :controller => "pictures", :action => "edit", :as => "edit_picture" 
-  patch "/pictures/:id", :controller => "pictures", :action => "update" 
+  get "/posts/:id/edit", :controller => "posts", :action => "edit", :as => "edit_post" 
+  patch "/posts/:id", :controller => "posts", :action => "update" 
   
   #DELETE
-  delete "/pictures/:id", :controller => "pictures", :action => "destroy" 
+  delete "/posts/:id", :controller => "posts", :action => "destroy" 
 end

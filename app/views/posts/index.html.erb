@@ -1,0 +1,21 @@
+<h1>All pictures</h1>
+<h2> 
+	<%= link_to("Create picture", new_post_url, :class => "btn btn-success") %>
+		
+</h2>
+
+<ul class="list-inline">
+<% @list_of_pictures.each do |pic| %> 
+<li>
+	<div>
+		<p><%= image_tag(pic.source, :width => 200, :class => "img-rounded") %></p>
+	</div>
+	<p><%= pic.caption %></p>
+	<%= link_to("Show", post_url(pic.id), :class => "btn btn-primary") %>
+	<%= link_to("Edit", edit_post_url(pic.id), :class => "btn btn-primary") %>
+	<%= link_to("Delete", post_url(pic.id), :class => "btn btn-danger", :method => "delete") %>
+</li>
+
+<% end %>
+</ul>
+	

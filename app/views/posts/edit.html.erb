@@ -1,5 +1,5 @@
 <h1> Editing a picture </h1>
-<%= form_tag(picture_url(@picture.id), :method => "patch", :class => "form-inline") do %>
+<%= form_tag(post_url(@picture.id), :method => "patch", :class => "form-inline") do %>
   <div class="form-group">
      <%= label_tag :caption, "Caption:" %>
      <%= text_field_tag :caption, @picture.caption %>
